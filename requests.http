@@ -1,0 +1,45 @@
+### Create advert
+POST http://127.0.0.1:5000/api/adverts
+Content-Type: application/json
+
+{
+  "title": "Test Title",
+  "description": "Test Description",
+  "owner": "Test User",
+  "owner_email": "alzex3@gmail.com"
+}
+
+### Update advert
+PUT http://127.0.0.1:5000/api/advert/2
+Content-Type: application/json
+
+{
+  "title": "Test Title",
+  "description": "Update Description",
+  "owner": "Test User"
+}
+
+### Get all adverts
+GET http://127.0.0.1:5000/api/adverts
+Accept: application/json
+
+### Get advert with id
+GET http://127.0.0.1:5000/api/advert/2
+Accept: application/json
+
+### Delete advert
+DELETE http://127.0.0.1:5000/api/advert/2
+Accept: application/json
+
+### Send emails
+POST http://127.0.0.1:5000/api/tasks
+Content-Type: application/json
+
+{
+  "subject": "Test Email",
+  "msg": "This is my test email!"
+}
+
+### Send emails status
+GET http://127.0.0.1:5000/api/tasks/22e42626-e90e-4706-8a34-6be148907667
+Content-Type: application/json

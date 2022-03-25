@@ -1,0 +1,12 @@
+flask
+sqlalchemy
+
+marshmallow
+marshmallow-sqlalchemy
+
+flask_sqlalchemy
+flask_marshmallow
+
+celery
+gevent
+redis
